@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'itim', cursive;
+    background: #fff;
+}
+#showimg{
+    height: 10vh;
+    display: flex;
+    margin: auto;
+}
+#showimg:hover{
+    cursor: pointer;
+}
+#pass{
+    color: red;
+    display: flex;
+    margin: auto;
+    padding: 15vh;
+    font-size: 20px;
+    text-align: center;
+    width: 30vw;
+    margin-top: 10vh;
+}
+.welcome{
+    text-align: center;
+    color: red;
+}
+.enter{
+    color: red;
+}
+.logo{
+    height: 18vh;
+}
+.logIn{
+    display: flex;
+    margin: auto;
+    border-radius: 1.5em;
+    border: none;
+    background: red;
+    color: #fff;
+    padding: 2.1vh;
+}
+.logIn:hover{
+    color: red;
+    background: #fff;
+    cursor: pointer;
+}

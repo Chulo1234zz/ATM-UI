@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'itim', cursive;
+    background: #fff;
+}
+.logIn{
+    display: flex;
+    margin: auto;
+    border-radius: 1.5em;
+    border: none;
+    background: red;
+    color: #fff;
+    padding: 2.1vh;
+    margin-top: 20vh;
+}
+.logIn:hover{
+    color: red;
+    background: #fff;
+    cursor: pointer;
+}
+.logo{
+    height: 18vh;
+}
+.trans{
+    color: red;
+    text-align: center;
+}
+.icon-animated {
+	width: 80px;
+	height: 80px;
+	position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.icon-animated .tick svg {
+	position: absolute;
+	left: 22px;
+	right: 0;
+	top: 12px;
+	bottom: 0;
+	fill: #fff;
+	width: 25px;
+    height: 52px;
+}
+
+.icon-animated-tick .circle {
+	fill: #60D154;
+	animation-fill-mode: forwards;
+    animation-name: circle-pulse;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+.tick-leg1 {
+	fill: #fff;
+	animation-fill-mode: forwards;
+    animation-name: tick-swipe1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transform: scaleX(0);
+    transform-origin: left bottom;
+	opacity: 0;
+}
+
+.tick-leg2 {
+	fill: #fff;
+	animation-fill-mode: forwards;
+    animation-name: tick-swipe2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transform: scaleY(0);
+    transform-origin: right bottom;
+	opacity: 0;
+}
+
+
+@keyframes tick-swipe1 {
+    0% {
+		opacity: 0;
+    }
+    10% {
+		opacity: 0.5;
+    }
+    20% {
+		opacity: 1;
+    }
+
+
+    100% {
+		opacity: 1;
+    	transform: scaleX(1);
+    }
+}
+
+@keyframes tick-swipe2 {
+	40% {
+		opacity: 0;
+	}
+    47% {
+    	transform: scaleY(0.15);
+		opacity: 1;
+    }
+    100% {
+    	transform: scaleY(1);
+		opacity: 1;
+    }
+}
+
+@keyframes circle-pulse {
+    0%, 25%, 75%, 100% {
+    	transform: scale(1);
+    }
+    50% {
+    	transform: scale(1.05);
+    }
+}
+
+.tick {
+	width: 100%;
+	height: 100%;
+	transform: rotate(45deg) scale(0.8);
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+    right: 0;
+}
+
+.tick-holder {
+	transform: scale(0.6);
+}
+@-webkit-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+  }
+}
+
+@-ms-keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 50px
+    }
+
+    100% {
+        stroke-dashoffset: 0
+    }
+}
+
+@-webkit-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+@-ms-keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+@keyframes checkmark-circle {
+    0% {
+        stroke-dashoffset: 240px
+    }
+
+    100% {
+        stroke-dashoffset: 480px
+    }
+}
+
+/* other styles */
+/* .svg svg {
+    display: none
+}
+ */
+.inlinesvg .svg svg {
+    display: inline
+}
+
+/* .svg img {
+    display: none
+} */
+
+.icon--order-success svg path {
+    -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+    animation: checkmark 0.25s ease-in-out 0.7s backwards;
+      -webkit-animation-delay: 3s; /* Safari 4.0 - 8.0 */
+    animation-delay: 3s;
+    
+}
+
+.icon--order-success svg circle {
+    -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+    animation: checkmark-circle 0.6s ease-in-out backwards;
+      -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    animation-delay: 2s;
+    display: flex;
+    margin: auto;
+}
+
